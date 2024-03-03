@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(223, 221, 221);
+  /* background: #0e223e; */
+  background-image: url("./images/Desktop\ -\ 1\ \(2\).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*------------ Login container ------------*/
+
+.box-area {
+  width: 930px;
+  box-shadow: 0px 0px 30px 0px #343131;
+  backdrop-filter: blur(6px);
+}
+
+/*------------ Right box ------------*/
+
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+.rem-got {
+  color: white;
+}
+.first {
+  background: linear-gradient(to right, #717dc2 0%, #eb0bdf 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*-------------Left box----------------*/
+.left-box {
+  background-image: url("./images/Frame\ 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*------------ Custom Placeholder ------------*/
+
+::placeholder {
+  font-size: 16px;
+}
+
+.rounded-4 {
+  border-radius: 20px;
+}
+.rounded-5 {
+  border-radius: 30px;
+}
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px) {
+  .box-area {
+    margin: 0 10px;
+  }
+  .rem-got {
+    flex-direction: column;
+  }
+  .left-box {
+    height: 100px;
+    overflow: hidden;
+  }
+  .right-box {
+    padding: 20px;
+  }
+}
